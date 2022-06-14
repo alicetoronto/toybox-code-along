@@ -1,0 +1,65 @@
+.skip-link {
+    position: absolute; //so that it doesn't have a footprint
+    left: -1000px; //so that it's off the screen altogether
+    background-color: $solidWhite;
+    color: black;
+    z-index: 10;
+    &:focus {
+        left: 0;
+    }
+}
+
+// Announcements
+.announcements {
+    text-align: center;
+    padding: 10px 0;
+}
+
+// Nav bar
+.navBar {
+    position: sticky;
+    top: 0;
+    border-top: 1px solid rgba(8, 75, 109, 0.08);
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        background-color: $solidWhite;
+    }
+    input[type=checkbox]{
+        opacity: 0; // want to use this instead of display: none because that is the equivalent of deleting something off the page altogehter so you lose the functionality
+        position: absolute; // lift off page so there's no footprint;
+    }
+}
+
+.searchCart {
+    display: flex;
+    .menuIcon, .bag {
+        margin-right: 15px;
+    }
+    .menuIcon {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    .bag {
+        display: flex;
+    }
+    .counter {
+        display: flex;
+        align-items: center;
+            p {
+                width: 24px;
+                height: 24px;
+                background-color: $primary;
+                border-radius: 50%;
+                color: $solidWhite;
+                text-align: center;
+            }
+    } 
+}
+
+.slideOutNav {
+    background-color: $primary;
+}
