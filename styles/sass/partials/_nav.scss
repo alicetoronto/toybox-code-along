@@ -20,6 +20,7 @@
     position: sticky;
     top: 0;
     border-top: 1px solid rgba(8, 75, 109, 0.08);
+    z-index: 10;
     .wrapper {
         display: flex;
         justify-content: space-between;
