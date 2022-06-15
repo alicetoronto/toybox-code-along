@@ -16,3 +16,28 @@ header {
 .textContainer {
     width: 48%;
 }
+
+// contact page header styles
+
+.contactHeader {
+    background-color: $quaternary;
+    padding-top: 120px;
+
+}
+
+.contactHeader .wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.contactHeader::after {
+    content: ''; //creating empty element
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/wave.svg);
+    background-size: 100% 150px; // needs to be the same as the width and height of the ::after element (which is the parent container)
+    background-color: $quaternary; // need to put colour because svg are transparent by default
+    display: block;
+    background-repeat: no-repeat;
+}
